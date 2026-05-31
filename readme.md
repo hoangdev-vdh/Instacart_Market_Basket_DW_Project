@@ -7,7 +7,7 @@
 ![Platform: Docker](https://img.shields.io/badge/Platform-Docker-2496ED?logo=docker&logoColor=white)
 
 ## 📌 Project Overview
-This project is an end-to-end **Data Engineering and Data Analytics** solution built around the famous [Instacart Market Basket dataset](https://www.kaggle.com/c/instacart-market-basket-analysis). The primary goal is to build a robust, scalable automated data pipeline that processes over **34 million rows** of transactional data, transforming it into a business-ready **Star Schema**, and uncovering actionable insights regarding customer purchasing behaviors.
+This project is an end-to-end **Data Engineering and Data Analytics** solution built around the famous [Instacart Market Basket dataset](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis). The primary goal is to build a robust, scalable automated data pipeline that processes over **34 million rows** of transactional data, transforming it into a business-ready **Star Schema**, and uncovering actionable insights regarding customer purchasing behaviors.
 
 This repository demonstrates my capability to conceptualize, design, and implement a full-stack data project suitable for real-world enterprise environments.
 
@@ -74,7 +74,7 @@ The `src/analy.ipynb` and `sql_query/` views utilize the robust **Gold schema** 
 ### 2. Setup
 1. Clone this repository.
    ```bash
-   git clone https://github.com/your-username/instacart_market_basket.git
+   git clone https://github.com/hoangdev-vdh/Instacart_Market_Basket_DW_Project.git
    ```
 2. Place the unzipped raw Instacart Kaggle CSVs inside `data/1_Inbound_Data/`.
 3. Start the Airflow cluster via Docker:
