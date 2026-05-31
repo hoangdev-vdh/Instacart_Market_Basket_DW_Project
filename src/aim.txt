@@ -1,0 +1,13 @@
+Mục Tiêu Của Vấn Đề và Bài Toán Đặt Ra
+Dự án Instacart ban đầu là một cuộc thi Machine Learning trên Kaggle nhằm mục tiêu Predictive Analytics (Dự đoán khách hàng sẽ mua gì trong tương lai).
+Tuy nhiên, khi chúng ta đưa nó vào Data Warehouse (Medallion Architecture) để kết nối với Power BI, mục tiêu của bài toán đã chuyển sang Business Intelligence (BI) & Descriptive Analytics. Cụ thể:
+
+Customer Profiling: Hiểu rõ chân dung và hành vi mua sắm của tập khách hàng (Tần suất, khoảng cách giữa các lần mua).
+
+Retail Analytics: Đo lường hiệu suất bán hàng theo thời gian, theo phòng ban (Department) và quầy kệ (Aisle).
+
+Market Basket Analysis: Khách hàng thường mua những sản phẩm nào cùng nhau? (Tạo tiền đề để sắp xếp quầy kệ, chạy combo khuyến mãi).
+
+Customer 360 (Chân dung khách hàng): Nhịp độ mua sắm của người dùng ra sao? Ai là khách hàng trung thành (High Frequency), ai sắp rời bỏ?
+
+Product Performance: Doanh thu và tần suất tái mua (Reorder rate) của từng phòng ban, quầy kệ diễn biến như thế nào theo các khung giờ trong ngày?

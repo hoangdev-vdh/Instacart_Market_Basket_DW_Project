@@ -1,0 +1,19 @@
+venv/
+env/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.vscode/
+.idea/
+logs/
+.env
+
+# Power BI
+*.pbix
+
+# Dữ liệu lớn
+data/3_Archive_Data/
+
+# hoặc rộng hơn
+*.csv
