@@ -16,6 +16,10 @@ This repository demonstrates my capability to conceptualize, design, and impleme
 ## 🏗️ System Architecture
 The project strictly implements the **Medallion Architecture** pattern (Bronze ➔ Silver ➔ Gold), orchestrated dynamically via **Apache Airflow** running in a **Dockerized** environment.
 
+<div align="center">
+  <img src="image/airflow_success.png" alt="Airflow DAG Pipeline" width="800"/>
+</div>
+
 ### 🥉 1. Bronze Layer (Raw Data Ingestion)
 - **Tooling:** Python (Pandas/SQLAlchemy) 
 - **Methodology:** 
@@ -41,6 +45,10 @@ The project strictly implements the **Medallion Architecture** pattern (Bronze �
   - **`dim_time_slot`**: Derived dimensional logic mapping out 'Weekend vs Weekday' and 'Morning/Afternoon/Evening/Night' buckets.
   - **`fact_order_items`**: The optimized heavy-lifting fact table storing every single product interaction.
 
+<div align="center">
+  <img src="image/schema_dbdiagram.png" alt="Star Schema Database Diagram" width="800"/>
+</div>
+
 ---
 
 ## ⚙️ Tech Stack & Skills Showcased
@@ -54,13 +62,36 @@ The project strictly implements the **Medallion Architecture** pattern (Bronze �
 
 ---
 
-## 📈 Analytical Capabilities (Market Basket Analysis)
+## 📈 Analytical Capabilities (Market Basket Analysis) & Power BI Dashboards
 The `src/analy.ipynb` and `sql_query/` views utilize the robust **Gold schema** to extract business patterns:
 * **Product Affinities:** Which items are most frequently placed in the cart first?
 * **Reorder Trends:** Identifying high-retention products and categories.
 * **Temporal Patterns:** Are weekends busier than weekdays? Do specific departments spike in the mornings (e.g., breakfast foods) vs. evenings?
 
 *(Check out `sql_query/fact_market_basket.sql` for deep-dive association rules).*
+
+### 📊 Power BI Dashboard Gallery
+The data pipeline powers a comprehensive BI reporting suite. Below are the key reports highlighting different analytical angles:
+
+**1. Executive Summary:** High-level KPIs, total orders, revenue proxy, and overall purchasing trends.
+<div align="center">
+  <img src="image/1_executive_summary.png" alt="Executive Summary" width="800"/>
+</div>
+
+**2. Customer 360:** Insights into user behaviors, order frequencies, and lifetime value segments.
+<div align="center">
+  <img src="image/2_customer360.png" alt="Customer 360" width="800"/>
+</div>
+
+**3. Product Performance:** Evaluation of best-selling products, category distributions, and reorder rates.
+<div align="center">
+  <img src="image/3_product_performance.png" alt="Product Performance" width="800"/>
+</div>
+
+**4. Item Deep Dive & Market Basket:** Association patterns and detailed drill-downs on product relationships.
+<div align="center">
+  <img src="image/4_item_deep_dive.png" alt="Item Deep Dive" width="800"/>
+</div>
 
 ---
 
